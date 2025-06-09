@@ -1,84 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>incremental fitness</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incremental Fitness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .navbar-custom {
+      background-color: #242525;
+    }
+
+    .navbar-custom .nav-link {
+      color: #488daf !important;
+    }
+
+    .navbar-custom .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-custom .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+
+    .hero-section {
+      background: url('./images/hero.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .overlay-content {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
 </head>
+
 <body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo-c-white.png" alt="Incremental Fitness logo" style="width: 80px; height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active fs-4" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="plans.html">Online Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .navbar-custom {
-            background-color: #BCDAD6;
-        }
-        .navbar-custom .nav-link {
-            color: #0D4059 !important;
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container">
-            <!-- Space for Image -->
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-white.png" alt="Logo" style="width: 50px; height: auto;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">online plans</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+    <div class="hero-overlay"></div>
+    <div class="overlay-content w-100">
+      <h1 class="display-4 fw-bold mb-4">Welcome to Incremental Fitness</h1>
+      <div class="d-flex justify-content-center mb-4">
+        <img src="images/logo-c-white.png" alt="Incremental Fitness logo" class="img-fluid w-50"
+          style="max-width: 300px;">
+      </div>
+      <p class="lead mb-4">Your journey to a healthier, stronger you starts here.</p>
+      <a href="#plans" class="btn btn-primary btn-lg">Get started!</a>
+    </div>
+  </section>
+
+  <section class="coaching-synopsis-section d-flex align-items-center"
+    style="position:relative; background:url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat; min-height:400px;">
+    <div class="overlay" style="background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:100%; height:100%;">
+    </div>
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center">
+        <div class="col-md-7 text-white">
+          <h2 class="fw-bold">Coaching Synopsis</h2>
+          <p class="lead">This is the elevator pitch. Explain what makes your coaching unique and why the visitor should
+            keep reading. Target your ideal client here!, this section expands in height as the content grows, and all
+            images are replacable
+          </p>
         </div>
-    </nav>
-
-    <section class="hero-section text-center text-white d-flex align-items-center justify-content-center" style="background: url('./images/hero.jpg') no-repeat center center/cover; height: 100vh; position: relative;">
-        <!-- Optional background overlay for better contrast -->
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5); z-index: 1;"></div>
-    
-        <!-- Content wrapper with higher z-index -->
-        <div class="overlay-content position-relative z-2">
-            <h1 class="display-4 fw-bold mb-4">Welcome to Incremental Fitness</h1>
-    
-            <div class="d-flex justify-content-center mb-4">
-                <img src="images/logo-c-white.png" alt="Logo" class="img-fluid w-50" style="max-width: 300px;">
-            </div>
-    
-            <p class="lead mb-4">Your journey to a healthier, stronger you starts here.</p>
-            <a href="#plans" class="btn btn-primary btn-lg">Explore Plans</a>
+        <div class="col-md-5 text-end">
+          <button class="btn btn-outline-light btn-lg">tell me more</button>
         </div>
-    </section>
-    
+      </div>
+    </div>
+  </section>
 
+  <!-- Section 1: Image Left, Text Right -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 mb-4 mb-md-0">
 
-    
+          <div
+            style="width:300px; height:600px; background:#e0e0e0; display:flex; align-items:center; justify-content:center;">
+            <span class="text-muted">Image</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <h3>Section Header Left Image</h3>
+          <p>
+            This is some descriptive text for the section where the image is on the left and the content is on the
+            right. You can replace this with your own copy.
+          </p>
+          <button class="btn btn-outline-light btn-lg">tell me more</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Section 2: Text Left, Image Right -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-3 mb-4 mb-md-0">
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+          <div
+            style="width:300px; height:600px; background:#e0e0e0; display:flex; align-items:center; justify-content:center;">
+            <span class="text-muted">Image</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <h3>Section Header Right Image</h3>
+          <p>
+            This is some descriptive text for the section where the image is on the right and the content is on the
+            left. You can replace this with your own copy.
+          </p>
+          <button class="btn btn-outline-light btn-lg">tell me more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap 5 Carousel Example -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/hero.jpg" class="d-block w-100" alt="First Slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First Slide Label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hero.jpg" class="d-block w-100" alt="Second Slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second Slide Label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hero.jpg" class="d-block w-100" alt="Third Slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third Slide Label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-    
-</body>
+
 </html>
