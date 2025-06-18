@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     html,
     body {
       height: 100%;
-     
+     margin: 0;
     }
 
     .navbar-custom {
@@ -104,8 +105,9 @@
     </div>
   </section>
 
-  <section class="coaching-synopsis-section d-flex align-items-center"
-    style="position:relative; background:url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat; min-height:400px;">
+  <section class="coaching-synopsis-section d-flex align-items-center" data-aos="fade-down"data-aos-offset="300"
+  data-aos-easing="ease-in-sine"
+    style="position:relative; background:url('./images/trapbar.png') center/cover no-repeat; min-height:400px;">
     <div class="overlay" style="background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:100%; height:100%;">
     </div>
     <div class="container position-relative" style="z-index:2;">
@@ -124,6 +126,7 @@
     </div>
   </section>
 
+  <div data-aos="fade-right" data-aos-offset="500">
   <!-- Section 1: Image Left, Text Right -->
   <section class="py-5">
     <div class="container">
@@ -134,19 +137,19 @@
           </div>
         </div>
         <div class="col-md-9">
-          <h3>Section Header Left Image</h3>
-          <p>
+          <h3 class="text-white" data-aos="fade-right">Section Header Left Image</h3>
+          <p class="text-white">
             This is some descriptive text for the section where the image is on the left and the content is on the
             right. You can replace this with your own copy.
           </p>
-          <button class="btn btn-outline-light btn-lg">tell me more</button>
+          <button class="btn btn-outline-light btn-lg glowing-border">tell me more</button>
         </div>
       </div>
     </div>
   </section>
-
+</div>
   <!-- Section 2: Text Left, Image Right -->
-  <section class="py-5">
+  <section class="py-5" data-aos="fade-left">
     <div class="container">
       <div class="row align-items-center flex-md-row-reverse">
         <div class="col-md-3 mb-4 mb-md-0">
@@ -155,65 +158,71 @@
           </div>
         </div>
         <div class="col-md-9">
-          <h3>Section Header Right Image</h3>
-          <p>
+          <h3 class="text-white">Section Header Right Image</h3>
+          <p class="text-white">
             This is some descriptive text for the section where the image is on the right and the content is on the
             left. You can replace this with your own copy.
           </p>
-          <button class="btn btn-outline-light btn-lg">tell me more</button>
+          <button class="btn btn-outline-light btn-lg glowing-border ">tell me more</button>
         </div>
       </div>
     </div>
   </section>
-  <!-- Bootstrap 5 Carousel Example -->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/w-elder-weights.png" class="d-block w-100" alt="First Slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First Slide Label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/weights-squatted-steve.png" class="d-block w-100" alt="Second Slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second Slide Label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/elder-kettles.png" class="d-block w-100" alt="Third Slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third Slide Label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <!--  Carousel -->
+ <!-- Bootstrap 5 Carousel with Vertically and Horizontally Centered Caption -->
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/w-elder-weights.png" class="d-block w-100" alt="First Slide">
+      <div class="carousel-caption top-40 start-50 translate-middle position-absolute">
+        <h5>First Slide Label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/weights-squatted-steve.png" class="d-block w-100" alt="Second Slide">
+      <div class="carousel-caption top-50 start-50 translate-middle position-absolute">
+        <h5>Second Slide Label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/elder-kettles.png" class="d-block w-100" alt="Third Slide">
+      <div class="carousel-caption top-50 start-50 translate-middle position-absolute">
+        <h5>Third Slide Label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   <br>
+
+
   <br>
+
+  <!-- videooo -->
   <div class="container my-5">
     <h2 class="text-center"></h2>
     <div class="ratio ratio-16x9">
       <video src="images/treadmills.mp4" title="abit of us" autoplay muted loop playsinline  class="w-100 h-100" style="object-fit: cover;"></video>
     </div>
   </div>
-
+<!-- contact  -->
   <div class="container-fluid position-relative min-vh-100 p-0">
     <img src="images/w-client.png" loading="lazy" 
          class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
@@ -239,6 +248,7 @@
       </form>
     </div>
   </div>
+  <!-- footer -->
   <footer class="bg-dark bg-opacity-75 text-white text-center py-4 w-100 mt-auto">
     <div class="container">
       <p class="mb-1">&copy; 2025 YourCompanyName. All rights reserved.</p>
@@ -251,6 +261,10 @@
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
