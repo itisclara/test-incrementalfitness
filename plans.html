@@ -31,7 +31,7 @@
             height: 100vh;
             background: rgba(34, 34, 34, 0.55);
             /* adjust opacity for darkness */
-            z-index: 0;
+            z-index: -1;
             pointer-events: none;
         }
 
@@ -54,30 +54,30 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-c-white.png" alt="Incremental Fitness logo" style="width: 80px; height: auto;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link fs-4" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-4" href="plans.html">Online Plans</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-4" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-custom p-0">
+        <div class="container-fluid p-0 m-0">
+          <a class="navbar-brand  p-2" href="#">
+            <img src="images/just-If-logo-c-white.svg" alt="Incremental Fitness logo" style="width: 80px; height: auto;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto p-2">
+              <li class="nav-item ms-4">
+                <a class="nav-link  fs-4" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link  fs-4" href="plans.html">Online Plans</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link active fs-4" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
     <!-- Overlay for readability -->
     <div class="bg-overlay"></div>
     <!-- Pricing Cards -->
@@ -88,7 +88,7 @@
                 <div class="card h-100 text-center shadow-sm ">
                     <div class="card-body">
                         <h5 class="card-title">Single Session</h5>
-                        <p class="pricing display-6 fw-bold">£35 <span class="fs-6 text-muted">/per session</span></p>
+                        <p class="pricing display-6 fw-bold">£35 <span class="fs-6 text-white">/per session</span></p>
                         <p class="mb-3">In person!</p>
                         <hr id="hr">
                         <ul class="list-unstyled mb-4">
@@ -106,7 +106,7 @@
                 <div class=" card h-100 text-center shadow-sm border-2 glowing-border">
                     <div class="card-body ">
                         <h5 class="card-title">Online Coaching</h5>
-                        <p class="pricing display-6 fw-bold">£100 <span class="fs-6 text-muted">/per month</span></p>
+                        <p class="pricing display-6 fw-bold">£100 <span class="fs-6 text-white">/per month</span></p>
                         <hr id="hr">
                         <ul class="list-unstyled mb-4">
                             <li><i class="bi bi-check2"></i> Weekly feedback & adjustments</li>
@@ -127,7 +127,7 @@
                 <div class="card h-100 text-center shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title">In Person Coaching</h5>
-                        <p class="pricing display-6 fw-bold">£140 <span class="fs-6 text-muted">/per month</span></p>
+                        <p class="pricing display-6 fw-bold">£140 <span class="fs-6 text-white">/per month</span></p>
                         <p class="mb-3">In person!</p>
                         <hr id="hr">
                         <ul class="list-unstyled mb-4">
@@ -151,16 +151,15 @@
             <div class="row align-items-center">
                 <div class="col-md-3 mb-4 mb-md-0">
 
-                    <div
-                        style="width:300px; height:600px; background:#e0e0e0; display:flex; align-items:center; justify-content:center;">
-                        <span class="text-muted">Image</span>
-                    </div>
+                    <img src="images/kneel.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-9">
-                    <h3>Section Header Left Image</h3>
-                    <p>
-                        This is some descriptive text for the section where the image is on the left and the content is
-                        on the right. You can replace this with your own copy.
+                    <h3 class="text-white">Online coaching</h3>
+                    <h4 class="text-white">Cant make it to the gym but still need accountability?</h4>
+                    <p class="text-white">
+                        Struggling to get results from your training? Incremental Fitness offers personalised online coaching that combines expert-designed workout programs, tailored nutritional guidance, and daily support—delivered through an easy-to-use mobile app. With two monthly check-ins, weekly progress updates, and unlimited on-call coaching, you'll have the structure, accountability, and motivation you need to finally reach your goals. Train smarter, feel better, and take the guesswork out of your fitness journey.
+
+
                     </p>
                     <button class="btn btn-outline-light btn-lg">tell me more</button>
                 </div>
@@ -180,7 +179,7 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <h3>Section Header Right Image</h3>
+                    <h3>online coaching</h3>
                     <p>
                         This is some descriptive text for the section where the image is on the right and the content is
                         on the
