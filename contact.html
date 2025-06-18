@@ -10,21 +10,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
   <style>
-    html,
     body {
-      height: 100%;
+      background: url('/images/bg2.png') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
     }
-    body {
-            background: url('/images/hero.jpg') no-repeat center center fixed;
-            background-size: cover;
-            min-height: 100vh;
-        }
+
     .navbar-custom {
       background-color: #242525;
     }
 
     .navbar-custom .nav-link {
-      color: #488daf !important;
+      color: #eaf2f7 !important;
     }
 
     .navbar-custom .navbar-toggler {
@@ -58,7 +55,7 @@
   </style>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <nav class="navbar sticky-top navbar-expand-lg navbar-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -84,32 +81,232 @@
     </div>
   </nav>
 
-<div class="d-flex justify-content-center align-items-center text-white" style="height: 50vh;">
-    <h1 class="text-center">Have a Question?</h1>
-</div>
+  <div class="contact-section">
+    <div class="d-flex justify-content-center align-items-center text-white">
+      <h1 class="text-center">Have a Question?</h1>
+    </div>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-        <form class="card p-4 shadow-lg" method="POST" action="mailto:your@email.com" enctype="text/plain">
-          <h2 class="card-title text-center mb-4">Contact Us</h2>
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" name="Name" required placeholder="e.g. Clara Doe">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="email" name="Email" required placeholder="e.g. clara@email.com">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="Message" rows="4" required placeholder="Type your message here..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Send Message</button>
-        </form>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+          <form class="card p-4 shadow-lg" method="POST" action="mailto:your@email.com" enctype="text/plain">
+            <h2 class="card-title text-center mb-4">Contact Us</h2>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="Name" required placeholder="e.g. Clara Doe">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="Email" required
+                placeholder="e.g. clara@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="Message" rows="4" required
+                placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+
+
+  <br>
+  <div class="contact-section">
+    <div class="d-flex justify-content-center align-items-center text-white">
+      <h1 class="text-center">FAQ's</h1>
+    </div>
+
+    <!-- Glassmorphism FAQ Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4 text-white">Frequently Asked Questions</h2>
+  <div class="accordion glassmorph-faq" id="faqAccordion">
+    <!-- FAQ 1 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading1">
+        <button class="accordion-button glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+          What is Incremental Fitness?
+        </button>
+      </h2>
+      <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Incremental Fitness is a coaching platform designed to help you achieve your health and fitness goals in a sustainable, step-by-step way.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 2 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading2">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+          How do I sign up for coaching?
+        </button>
+      </h2>
+      <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Click the "Get Started" button on our homepage, fill out our intake form, and a coach will contact you to discuss your goals.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 3 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading3">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+          Are your plans suitable for beginners?
+        </button>
+      </h2>
+      <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Yes! We create personalized plans for all levels, including complete beginners.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 4 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading4">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+          Can I cancel my coaching at any time?
+        </button>
+      </h2>
+      <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Absolutely. You can cancel your coaching plan anytime—no questions asked.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 5 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading5">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+          What equipment do I need?
+        </button>
+      </h2>
+      <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Many plans can be done with minimal or no equipment. We'll work with what you have!
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 6 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading6">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+          How do I contact my coach?
+        </button>
+      </h2>
+      <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          After signing up, you'll get direct contact details for your coach via email and our client portal.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 7 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading7">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+          Do you offer nutrition guidance?
+        </button>
+      </h2>
+      <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Yes, we offer nutrition advice and can help you build healthy eating habits alongside your fitness plan.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 8 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading8">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+          What if I have an injury or health condition?
+        </button>
+      </h2>
+      <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Please let us know during the intake process. We customize plans to accommodate injuries or health conditions.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 9 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading9">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
+          Are sessions in-person or online?
+        </button>
+      </h2>
+      <div id="faqCollapse9" class="accordion-collapse collapse" aria-labelledby="faqHeading9" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          We offer both! Most clients start online, but ask us about in-person options in your area.
+        </div>
+      </div>
+    </div>
+    <!-- FAQ 10 -->
+    <div class="accordion-item glassmorph-faq-item mb-3">
+      <h2 class="accordion-header" id="faqHeading10">
+        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
+          How soon can I start?
+        </button>
+      </h2>
+      <div id="faqCollapse10" class="accordion-collapse collapse" aria-labelledby="faqHeading10" data-bs-parent="#faqAccordion">
+        <div class="accordion-body text-white">
+          Once you sign up, you can usually begin within 1-2 business days after your consultation.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Glassmorphism FAQ Custom Styles -->
+<style>
+.glassmorph-faq {
+  background: rgba(36,37,37,0.35);
+  border-radius: 1.5rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glassmorph-faq-item {
+  background: rgba(36,37,37,0.35);
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px 0 rgba(31,38,135,0.10);
+}
+
+.glassmorph-faq-btn {
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+}
+.glassmorph-faq-btn:not(.collapsed) {
+  background: rgba(36,37,37,0.45);
+  color: #fff;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  border-color: #7ec3fa;
+  box-shadow: 0 0 0 0.1rem #7ec3fa40;
+}
+.accordion-body {
+  background: transparent;
+}
+</style>
+
+  <footer class="bg-dark bg-opacity-75 text-white text-center py-4 w-100 mt-auto">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 YourCompanyName. All rights reserved.</p>
+      <small>
+        <a href="mailto:your@email.com" class="text-white text-decoration-underline">Contact</a>
+        &middot;
+        <a href="#" class="text-white text-decoration-underline">Privacy Policy</a>
+      </small>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
