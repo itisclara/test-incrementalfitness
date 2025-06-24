@@ -196,6 +196,49 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <div class="container my-5">
+    <h2 class="text-center"></h2>
+    <div class="ratio ratio-16x9">
+      <video src="images/treadmills.mp4" title="abit of us" autoplay muted loop playsinline class="w-100 h-100"
+        style="object-fit: cover;"></video>
+    </div>
+  </div>
+  <!-- contact  -->
+  <div class="container-fluid position-relative min-vh-100 p-0">
+    <img src="images/w-client.png" loading="lazy" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+      style="filter: brightness(0.6);" alt="Background" />
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+      <form class="card glassmorph p-4 shadow-lg border-0 rounded-4" style="max-width: 420px; width: 100%; z-index: 2;"
+        method="POST" action="mailto:your@email.com" enctype="text/plain">
+        <h2 class="card-title text-center mb-4">Contact Us</h2>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" name="Name" required placeholder="e.g. Clara Doe">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" name="Email" required placeholder="e.g. clara@email.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="Message" rows="4" required
+            placeholder="Type your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-lg glowing-border">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="bg-dark bg-opacity-75 text-white text-center py-4 w-100 mt-auto">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 YourCompanyName. All rights reserved.</p>
+      <small>
+        <a href="mailto:your@email.com" class="text-white text-decoration-underline">Contact</a>
+        &middot;
+        <a href="#" class="text-white text-decoration-underline">Privacy Policy</a>
+      </small>
+    </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
