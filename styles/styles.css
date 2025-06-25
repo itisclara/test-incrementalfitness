@@ -3,12 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h1, h2, h3{
+  color: #8acabd !important;
+}
 body {
     background-color: #242525 !important;
   }
 
+  .navbar-custom {
+    background-color: #242525;
+  }
 
+  .navbar-custom .nav-link,
+  #a-p {
+    color: #eaf2f7 !important;
+  }
+
+  .navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
 .card {
     padding: 50px;
     background: rgba(255, 255, 255, 0.1);
@@ -25,10 +42,13 @@ body {
 }
 
 .pricing {
-    color: white;
+    color: #8acabd;
     
 }
-
+.review-stars {
+  color: #00ffcc;
+  font-size: 1.3rem;
+}
 .pricing .small {
     font-size: 16px;
 }
@@ -37,10 +57,10 @@ body {
     margin-top: 70px;
 }
 
+/* =---------------------------- */
 
 
-
-
+/* ======================================= */
 
 
 
@@ -64,3 +84,44 @@ body {
     background-color: transparent !important;
     color: white !important;
   }
+  
+
+  .glassmorph-faq {
+    background: rgba(36,37,37,0.35);
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .glassmorph-faq-item {
+    background: rgba(36,37,37,0.35);
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px 0 rgba(31,38,135,0.10);
+  }
+  
+  .glassmorph-faq-btn {
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+  }
+  .glassmorph-faq-btn:not(.collapsed) {
+    background: rgba(36,37,37,0.45);
+    color: #fff;
+    box-shadow: none;
+  }
+  .accordion-button:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 0 0.1rem #7ec3fa40;
+  }
+  .accordion-body {
+    background: transparent;
+  }
+ 
+  

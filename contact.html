@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <style>
     body {
       background: url('/images/bg2.png') no-repeat center center fixed;
       background-size: cover;
       min-height: 100vh;
+      font-family: 'Roboto', sans-serif;
     }
 
     .navbar-custom {
@@ -52,6 +54,20 @@
       position: relative;
       z-index: 2;
     }
+    .map-glassmorph {
+    background: rgba(36,37,37,0.60);
+    border: 2px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 800px) {
+    .map-glassmorph {
+      padding: 1rem;
+    }
+  }
   </style>
 </head>
 
@@ -104,7 +120,7 @@
               <textarea class="form-control" id="message" name="Message" rows="4" required
                 placeholder="Type your message here..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            <button type="submit" class="btn btn-outline-light btn-lg glowing-border">Send Message</button>
           </form>
         </div>
       </div>
@@ -119,195 +135,192 @@
     </div>
 
     <!-- Glassmorphism FAQ Section -->
-<section class="container my-5">
-  <h2 class="text-center mb-4 text-white">Frequently Asked Questions</h2>
-  <div class="accordion glassmorph-faq" id="faqAccordion">
-    <!-- FAQ 1 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading1">
-        <button class="accordion-button glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
-          What is Incremental Fitness?
-        </button>
-      </h2>
-      <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Incremental Fitness is a coaching platform designed to help you achieve your health and fitness goals in a sustainable, step-by-step way.
+    <section class="container my-5">
+      <h2 class="text-center mb-4 text-white">Frequently Asked Questions</h2>
+      <div class="accordion glassmorph-faq" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading1">
+            <button class="accordion-button glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              What is Incremental Fitness?
+            </button>
+          </h2>
+          <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Incremental Fitness is a coaching platform designed to help you achieve your health and fitness goals in a
+              sustainable, step-by-step way.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading2">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+              How do I sign up for coaching?
+            </button>
+          </h2>
+          <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Click the "Get Started" button on our homepage, fill out our intake form, and a coach will contact you to
+              discuss your goals.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading3">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+              Are your plans suitable for beginners?
+            </button>
+          </h2>
+          <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Yes! We create personalized plans for all levels, including complete beginners.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading4">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+              Can I cancel my coaching at any time?
+            </button>
+          </h2>
+          <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Absolutely. You can cancel your coaching plan anytime—no questions asked.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading5">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+              What equipment do I need?
+            </button>
+          </h2>
+          <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Many plans can be done with minimal or no equipment. We'll work with what you have!
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 6 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading6">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+              How do I contact my coach?
+            </button>
+          </h2>
+          <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              After signing up, you'll get direct contact details for your coach via email and our client portal.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 7 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading7">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+              Do you offer nutrition guidance?
+            </button>
+          </h2>
+          <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Yes, we offer nutrition advice and can help you build healthy eating habits alongside your fitness plan.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 8 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading8">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+              What if I have an injury or health condition?
+            </button>
+          </h2>
+          <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Please let us know during the intake process. We customize plans to accommodate injuries or health
+              conditions.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 9 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading9">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
+              Are sessions in-person or online?
+            </button>
+          </h2>
+          <div id="faqCollapse9" class="accordion-collapse collapse" aria-labelledby="faqHeading9"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              We offer both! Most clients start online, but ask us about in-person options in your area.
+            </div>
+          </div>
+        </div>
+        <!-- FAQ 10 -->
+        <div class="accordion-item glassmorph-faq-item mb-3">
+          <h2 class="accordion-header" id="faqHeading10">
+            <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
+              How soon can I start?
+            </button>
+          </h2>
+          <div id="faqCollapse10" class="accordion-collapse collapse" aria-labelledby="faqHeading10"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white">
+              Once you sign up, you can usually begin within 1-2 business days after your consultation.
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- FAQ 2 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading2">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-          How do I sign up for coaching?
-        </button>
-      </h2>
-      <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Click the "Get Started" button on our homepage, fill out our intake form, and a coach will contact you to discuss your goals.
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 3 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading3">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-          Are your plans suitable for beginners?
-        </button>
-      </h2>
-      <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Yes! We create personalized plans for all levels, including complete beginners.
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 4 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading4">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
-          Can I cancel my coaching at any time?
-        </button>
-      </h2>
-      <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Absolutely. You can cancel your coaching plan anytime—no questions asked.
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 5 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading5">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
-          What equipment do I need?
-        </button>
-      </h2>
-      <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Many plans can be done with minimal or no equipment. We'll work with what you have!
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 6 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading6">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
-          How do I contact my coach?
-        </button>
-      </h2>
-      <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          After signing up, you'll get direct contact details for your coach via email and our client portal.
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 7 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading7">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
-          Do you offer nutrition guidance?
-        </button>
-      </h2>
-      <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Yes, we offer nutrition advice and can help you build healthy eating habits alongside your fitness plan.
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 8 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading8">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
-          What if I have an injury or health condition?
-        </button>
-      </h2>
-      <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Please let us know during the intake process. We customize plans to accommodate injuries or health conditions.
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 9 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading9">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
-          Are sessions in-person or online?
-        </button>
-      </h2>
-      <div id="faqCollapse9" class="accordion-collapse collapse" aria-labelledby="faqHeading9" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          We offer both! Most clients start online, but ask us about in-person options in your area.
-        </div>
-      </div>
-    </div>
-    <!-- FAQ 10 -->
-    <div class="accordion-item glassmorph-faq-item mb-3">
-      <h2 class="accordion-header" id="faqHeading10">
-        <button class="accordion-button collapsed glassmorph-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
-          How soon can I start?
-        </button>
-      </h2>
-      <div id="faqCollapse10" class="accordion-collapse collapse" aria-labelledby="faqHeading10" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
-          Once you sign up, you can usually begin within 1-2 business days after your consultation.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Glassmorphism FAQ Custom Styles -->
-<style>
-.glassmorph-faq {
-  background: rgba(36,37,37,0.35);
-  border-radius: 1.5rem;
-  padding: 2rem 1rem;
-  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.25);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
 
-.glassmorph-faq-item {
-  background: rgba(36,37,37,0.35);
-  border-radius: 1rem;
-  border: 1px solid rgba(255,255,255,0.12);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 2px 8px 0 rgba(31,38,135,0.10);
-}
-
-.glassmorph-faq-btn {
-  background: transparent;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 1rem 1rem 0 0;
-  box-shadow: none;
-}
-.glassmorph-faq-btn:not(.collapsed) {
-  background: rgba(36,37,37,0.45);
-  color: #fff;
-  box-shadow: none;
-}
-.accordion-button:focus {
-  border-color: #7ec3fa;
-  box-shadow: 0 0 0 0.1rem #7ec3fa40;
-}
-.accordion-body {
-  background: transparent;
-}
-</style>
-
-  <footer class="bg-dark bg-opacity-75 text-white text-center py-4 w-100 mt-auto">
-    <div class="container">
-      <p class="mb-1">&copy; 2025 YourCompanyName. All rights reserved.</p>
-      <small>
-        <a href="mailto:your@email.com" class="text-white text-decoration-underline">Contact</a>
-        &middot;
-        <a href="#" class="text-white text-decoration-underline">Privacy Policy</a>
-      </small>
+    <div class="container my-5">
+      <div class="d-flex justify-content-center align-items-center text-white mb-4">
+        <h1 class="text-center">Where to find us</h1>
+      </div>
+      <div class="map-glassmorph rounded-4 shadow-lg mx-auto" style="max-width: 800px;">
+        <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.6546276145875!2d-2.212730501812196!3d52.1959141098511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870f197c867e65f%3A0x12d8d94311ff7ce6!2sIncremental%20Fitness%20UK!5e0!3m2!1sen!2suk!4v1750847806862!5m2!1sen!2suk"
+            style="border:0; min-height:300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="bg-dark bg-opacity-75 text-white text-center py-4 w-100 mt-auto">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 YourCompanyName. All rights reserved.</p>
+        <small>
+          <a href="mailto:your@email.com" class="text-white text-decoration-underline">Contact</a>
+          &middot;
+          <a href="#" class="text-white text-decoration-underline">Privacy Policy</a>
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
